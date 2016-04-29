@@ -1,5 +1,9 @@
 /**
  * Created by vinside on 4/29/16.
  */
-;(function ($) {
-})(jQuery);
+/*global $, jQuery, alert*/
+
+//$(function () {
+//    'use strict';
+//    //alert("jghdjgh");
+//})(jQuery);

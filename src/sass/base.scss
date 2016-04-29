@@ -1,2 +1,17 @@
 //base.scss
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background-color: #ebcccc;
+}
+
+.link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
