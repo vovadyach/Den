@@ -1,0 +1,28 @@
+{
+  "name": "1",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "vd <vd@norse.digital>"
+  ],
+  "license": "ISC",
+  "homepage": "\"lab\"",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src/vendor"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
