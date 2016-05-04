@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  background-color: #ebcccc;
+
 }
 
 .link {
@@ -14,4 +14,9 @@ body {
   &:focus {
     text-decoration: none;
   }
+}
+
+.divider {
+  opacity: 0.75;
+  border: 1px solid $divider-color;
 }

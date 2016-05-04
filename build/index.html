@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/style.css"/>
+    <!-- bxSlider CSS file -->
+    <link href="javascripts/bxSlider/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
 <header class="header">
@@ -51,17 +53,199 @@
         </div>
     </div>
 </header>
-<div class="banner">
-    <div class="slider"></div>
+
+<section class="banner">
+    <div class="slider">
+        <ul class="slides">
+            <li class="slide__item" style="background-image: url(images/main.png);">
+                <img class="slide__img" src="../images/main.png" alt=""/>
+                <div class="slide-container">
+                    <div class="slide-container__cell">
+                        <div class="slide-container__title">
+                            <a href="#" class="link slide__title">Velcommen</a>
+                            <p class="slide__text">Her finner du det meste av informasjon relatert til prostatakreft</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide__item" style="background-image: url(images/Velkommen_home_gallery.jpg);">
+                <img class="slides__img" src="../images/Velkommen_home_gallery.jpg" alt=""/>
+            </li>
+            <li class="slide__item" style="background-image: url(images/main-2.png);">
+                <img class="slides__img" src="../images/main-2.png" alt=""/>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="layout">
+    <div class="info-container">
+        <div class="info-heading">
+            <h1 class="info__header"> Facta</h1>
+            <p class="info__description">Noen faktaaopplysninger om prostatakreft</p>
+        </div>
+        <div class="info-content">
+            <div class="content-box">
+                <div class="content__img">
+                    <img class="item__icon" src="../images/Icons/ico-risiko.png" alt=""/>
+                </div>
+                <div class="content__description">
+                    <h2 class="content__title">Risiko</h2>
+                    <div class="content__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content__img">
+                    <img class="item__icon" src="../images/Icons/ico-hyppigste.png" alt=""/>
+                </div>
+                <div class="content__description">
+                    <h2 class="content__title">Risiko</h2>
+                    <div class="content__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content__img">
+                    <img class="item__icon" src="../images/Icons/ico-hyppigste.png" alt=""/>
+                </div>
+                <div class="content__description">
+                    <h2 class="content__title">Risiko</h2>
+                    <div class="content__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <hr class="divider"/>
+    <div class="subscribe-container">
+        <div class="subscribe-box">
+            <div class="subscribe-input-box">
+                <input class="subscribe-box__input border-primary" type="search" name="" id="" placeholder="E-post"/>
+                <input class="subscribe-box__submit_icon" type="submit" name="" id="" value=""/>
+            </div>
+            <div class="subscribe-submit-box">
+                <input class="subscribe-box__submit button-primary" type="submit" name="" id="" value="Abonner"/>
+            </div>
+        </div>
+    </div>
+    <hr class="divider"/>
+    <section class="actual-info">
+        <div class="actual-info-container">
+            <div class="actual-info-heading ">
+                <h1 class="actual-info__title">Actualiteter</h1>
+                <p class="actual-info__text">Hold deg oppdatert</p>
+            </div>
+            <div class="actual-info-box">
+                <div class="actual-info-image">
+                    <a href="#" class="link">
+                        <img class="actual__img" src="../images/Risikofaktorer_home_alticle.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="actual__description">
+                    <h4 class="actual__title">Overskrigt</h4>
+                    <div class="actual__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+                <div class="les-mer__button">
+                    <a href="#" class="link les-mer__link border-primary">Les mer</a>
+                </div>
+            </div>
+            <div class="actual-info-box">
+                <div class="actual-info-image">
+                    <a href="#" class="link">
+                        <img class="actual__img" src="../images/Spoersmaal-du-kan-stille-legen-din_home_alticle.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="actual__description">
+                    <h4 class="actual__title">Overskrigt</h4>
+                    <div class="actual__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+                <div class="les-mer__button">
+                    <a href="#" class="link les-mer__link border-primary">Les mer</a>
+                </div>
+            </div>
+            <div class="actual-info-box">
+                <div class="actual-info-image">
+                    <a href="#" class="link">
+                        <img class="actual__img" src="../images/Symptomer_home_alticle.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="actual__description">
+                    <h4 class="actual__title">Overskrigt</h4>
+                    <div class="actual__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque consequuntur cumque, distinctio dolorem ea eaque,
+                            enim error expedita harum hic nemo.
+                        </p>
+                    </div>
+                </div>
+                <div class="les-mer__button">
+                    <a href="#" class="link les-mer__link border-primary">Les mer</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<hr class="divider"/>
+
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-support">
-            <a href="" class="link footer-support__link">Vis din stotte</a>
+            <a href="#" class="link footer-support__link button-primary">Vis din stotte</a>
+        </div>
+        <div class="footer-info">
+            <a class="link footer-link__info" href="#">post@prostatakreftstiftstiftelsen.no</a>
+            <p class="footer-copyright">
+                &copy;&nbsp;2014 Den Norske Prostatakrefttstiftelsen
+            </p>
         </div>
     </div>
 </footer>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="javascripts/script.js"></script>
+<script src="javascripts/slider.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="javascripts/bxSlider/jquery.bxslider.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slides').bxSlider({
+            auto: true,
+            autoControls: 0
+        });
+
+    });
+</script>
 </body>
 </html>
