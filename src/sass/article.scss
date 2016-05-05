@@ -1,0 +1,166 @@
+//article.scss
+
+.banner__main {
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 270px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;;
+  background-color: #92918c;
+}
+
+
+
+.banner__img {
+  display: none;
+}
+.banner__text-container {
+  @extend .vertical-middle;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.banner___title {
+  color: #fff;
+  position: relative;
+  padding-bottom: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    display: block;
+    width: 50px;
+    border: 1px solid #fff;
+  }
+}
+
+.banner__breadcrumbs {
+  margin: 18px 28px;
+}
+.breadcrumb__menu {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+.breadcrumb__item {
+  float: left;
+  color: #ffffff;
+  &:before {
+    content: "/";
+    margin: 0 5px;
+    color: inherit;
+  }
+  &:first-child::before {
+    content: "";
+    padding-right: 0;
+  }
+  &:last-child {
+    color: #AFAEAC
+  }
+  .breadcrumb__link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.article {
+  @extend .reset-child-margin;
+  margin-bottom: 40px;
+  float: left;
+  width: 70%;
+  h4 {
+    color: #1FAC40;
+    margin-top: 20px;
+  }
+  .article__nav-left {
+    float: left;
+  }
+  .article__nav-right {
+    float: right;
+  }
+  .arrow__link {
+    @extend .menu__link;
+    color: #1FAC40;
+    &:focus {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .article-previous-next {
+    @extend .clearfix;
+  }
+}
+
+.content-aside {
+  overflow: hidden;
+  padding-left: 8px;
+  h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $text-color;
+    font-weight: 600;
+  }
+  .menu__navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    .menu__item {
+      padding: 5px 0;
+      &:before  {
+        @extend .menu__link;
+        content: "\203A";
+        font-size: 16px;
+      }
+      .menu__link {
+        @extend .menu__link;
+        color: #666;
+        font-size: 13px;
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .subscribe-container {
+    padding: 0;
+    .subscribe__title {
+      margin: 20px 0;
+    }
+    .subscribe-box {
+      &> div {
+        padding-right: 0;
+        margin-bottom: 10px;
+        float: none;
+        width: 100%;
+      }
+      .subscribe-input-box {
+        .subscribe-box__submit_icon {
+          right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.layout {
+  .container {
+    padding-top: 40px;
+  }
+}

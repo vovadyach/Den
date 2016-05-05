@@ -3,9 +3,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-
 }
 
+h1 {
+  font-size: 40px;
+  color: #333;
+}
 .link {
   text-decoration: none;
   &:hover {
@@ -19,4 +22,31 @@ body {
 .divider {
   opacity: 0.75;
   border: 1px solid $divider-color;
+}
+
+.vertical-middle {
+  font-size: 0;
+  height: 100%;
+  &:after {
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 100%;
+  }
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $base-font-size;
+  }
+}
+
+.reset-child-margin {
+  & > * {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

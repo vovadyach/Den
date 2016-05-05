@@ -1,0 +1,31 @@
+//contact.scss
+
+.contact__container {
+  max-width: 800px;
+  margin: auto;
+  [class*='col-'] {
+    padding-top: 24px;
+    p {
+      margin: 5px 0;
+      color: $text-color;
+      font-weight: 600;
+    }
+    textarea {
+      resize: none;
+    }
+  }
+
+  .send__button-box {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .submit__button_send {
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

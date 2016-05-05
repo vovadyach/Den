@@ -104,5 +104,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['sass']);
     //Current project tasks
     grunt.registerTask('start', ['clean', 'copy', 'sass', 'includereplacemore',
-        'express', 'jslint', 'jslint', 'open', 'watch']);
+        'express', 'open', 'watch']);
 };
