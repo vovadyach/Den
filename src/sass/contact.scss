@@ -29,3 +29,34 @@
     font-weight: 600;
   }
 }
+
+.contact__field {
+  padding: 8px 0 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #dbcdcd;
+}
+
+@media only screen and (max-width: $screen-md-max ) {
+  .contact__container {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .contact__container {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .contact__container {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .contact__container {
+    max-width: 240px;
+  }
+}

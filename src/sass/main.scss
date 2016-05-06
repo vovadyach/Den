@@ -393,3 +393,77 @@
   font-size: 16px;
   color: #937B82;
 }
+.menu__bar {
+  @extend .clearfix;
+  display: none;
+}
+@media only screen and (max-width: $screen-sm-max) {
+  .navigation {
+    display: none;
+  }
+  .menu__bar {
+    display: block;
+    .menu__hamburger {
+      float: right;
+      padding-top: 15px;
+    }
+    .hamburger__elem {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .info-content {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    .content-box {
+      float: none;
+      width: auto;
+      padding: 40px 15px;
+    }
+  }
+  .subscribe-container {
+    max-width: 500px;
+  }
+  .actual-info-container {
+    max-width: 500px;
+  }
+  .actual-info-box {
+    float: none;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .logo__img {
+    width: 100%;
+    max-width: 215px;
+  }
+  .menu__bar {
+    .menu__hamburger {
+      padding-top: 5px;
+    }
+  }
+  .slide-container__title {
+    padding-left: 0;
+  }
+  .subscribe-container {
+    max-width: 300px;
+    .subscribe-box__submit_icon {
+      right: 10px;
+    }
+    .subscribe-input-box {
+      float: none;
+      padding-right: 0;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    .subscribe-submit-box {
+      float: none;
+      width: auto;
+    }
+  }
+}

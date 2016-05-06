@@ -21,7 +21,7 @@
   margin: auto;
   text-align: center;
 }
-.banner___title {
+.banner__title {
   color: #fff;
   position: relative;
   padding-bottom: 18px;
@@ -162,5 +162,52 @@
 .layout {
   .container {
     padding-top: 40px;
+  }
+}
+@media only screen and (max-width: $screen-md-max) {
+  .layout {
+    .container {
+      width: auto;
+    }
+  }
+}
+@media only screen and (max-width: $screen-sm-max) {
+  .layout {
+    .container {
+      width: auto;
+    }
+  }
+  .article {
+    width: 65%;
+  }
+  .content-aside {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .article__container {
+    max-width: 450px;
+    margin: auto;
+  }
+  .article {
+    float: none;
+    width: auto;
+    .divider {
+      display: none;
+    }
+    .article-previous-next {
+      display: none;
+    }
+  }
+  .content-aside {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .article__container {
+    max-width: 300px;
   }
 }
