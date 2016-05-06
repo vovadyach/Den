@@ -1,7 +1,7 @@
 /**
  * Created by vinside on 5/4/16.
  */
-;(function($) {
+(function() {
     $('.slides').bxSlider({
         auto: true,
         autoControls: 0
