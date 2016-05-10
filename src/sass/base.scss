@@ -1,4 +1,7 @@
 //base.scss
+body {
+  position: relative;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -24,6 +27,7 @@ h1 {
   border: 1px solid $divider-color;
 }
 
+//Aligns div vertically
 .vertical-middle {
   font-size: 0;
   height: 100%;

@@ -5818,6 +5818,9 @@ button.close {
     display: none !important; } }
 
 body {
+  position: relative; }
+
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
 
@@ -6294,19 +6297,54 @@ h1 {
       cursor: pointer; }
   .menu__outer {
     display: block;
+    padding: 15px;
     -webkit-transition: 0.8s all;
     -moz-transition: 0.8s all;
     -ms-transition: 0.8s all;
     -o-transition: 0.8s all;
     transition: 0.8s all;
-    position: fixed;
+    position: absolute;
     background: #fff;
-    max-width: 280px;
+    width: 280px;
     height: 100%;
     top: 0;
-    z-index: 27;
+    z-index: 10000;
     right: -360px;
     box-shadow: 7px 19px 20px rgba(16, 16, 14, 0.63); }
+    .menu__outer .navigation-menu {
+      padding-left: 24px;
+      padding-right: 14px; }
+    .menu__outer .nav__menu-inner {
+      display: none; }
+    .menu__outer .menu__outer-navigation {
+      padding: 0;
+      margin-top: 15px; }
+      .menu__outer .menu__outer-navigation .nav__item_outer {
+        padding: 10px 0; }
+      .menu__outer .menu__outer-navigation .menu__link, .menu__outer .menu__outer-navigation .article .arrow__link, .article .menu__outer .menu__outer-navigation .arrow__link, .menu__outer .menu__outer-navigation .content-aside .menu__navigation .menu__item:before, .content-aside .menu__navigation .menu__outer .menu__outer-navigation .menu__item:before, .menu__outer .menu__outer-navigation .content-aside .menu__navigation .menu__item .menu__link, .content-aside .menu__navigation .menu__item .menu__outer .menu__outer-navigation .menu__link, .menu__outer .menu__outer-navigation .search__pagination .pagination__item .pagination__link, .search__pagination .pagination__item .menu__outer .menu__outer-navigation .pagination__link {
+        padding: 0; }
+      .menu__outer .menu__outer-navigation .caret__link {
+        float: right;
+        font-size: 20px; }
+    .menu__outer .nav-lang-switcher {
+      display: block;
+      margin: 0 0 20px 0; }
+    .menu__outer .nav-search {
+      display: block; }
+      .menu__outer .nav-search .nav-search__input {
+        width: 100%; }
+    .menu__outer .menu__outer-bar {
+      float: right;
+      position: relative; }
+    .menu__outer .outer__bar-link {
+      background-color: #444444;
+      width: 30px;
+      height: 5px;
+      display: block;
+      float: right;
+      border: 1px solid transparent;
+      margin: 10px 0;
+      border-radius: 2px; }
   .menu-open .overlay {
     display: block;
     cursor: pointer; }
